@@ -19,8 +19,23 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
+var userChoice;
 
+userChoice = "";
 
+var computerChoice;
+
+computerChoice = "";
+
+var winner;
+
+winner = "";
+
+var choices
+
+choices = ["rock", "paper", "scissors"];
+
+console.log("hello");
 
 //FUNCTIONS
 
