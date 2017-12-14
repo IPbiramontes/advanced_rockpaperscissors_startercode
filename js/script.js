@@ -19,23 +19,8 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-var userChoice;
 
-userChoice = "";
-
-var computerChoice;
-
-computerChoice = "";
-
-var winner;
-
-winner = "";
-
-var choices
-
-choices = ["rock", "paper", "scissors"];
-
-console.log("hello");
+/* global $*/
 
 //FUNCTIONS
 
@@ -43,3 +28,25 @@ console.log("hello");
 
 // DOCUMENT READY FUNCTION
 
+$( document ).ready(function() {
+
+        var winner = "";
+        
+
+        
+        $("#click").click(function() {
+                var userChoice = $("input").val();
+                $("#insertchoice").html(userChoice);
+                var choices = ["Rock", "Paper", "Scissors"];
+                var randOm = Math.floor(Math.random()*3);
+                console.log(choices[randOm]);
+                var computerChoice = choices[randOm];
+                $("#insertchoice2").html(computerChoice);
+
+        });
+        
+        
+        
+
+
+});
