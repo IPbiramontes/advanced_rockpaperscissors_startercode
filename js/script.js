@@ -42,6 +42,28 @@ $( document ).ready(function() {
                 console.log(choices[randOm]);
                 var computerChoice = choices[randOm];
                 $("#insertchoice2").html(computerChoice);
+                
+                if (userChoice === computerChoice){
+                        $("#win").html("Tie!");
+                }
+                if (userChoice === "Paper" && computerChoice === "Rock"){
+                        $("#win").html("User wins!");
+                }
+                if (userChoice === "Paper" && computerChoice === "Scissors"){
+                        $("#win").html("Computer wins!");
+                }
+                if (userChoice === "Rock" && computerChoice === "Paper"){
+                        $("#win").html("Computer wins!");
+                }
+                if (userChoice === "Rock" && computerChoice === "Scissors"){
+                        $("#win").html("User wins!");
+                }
+                if (userChoice === "Scissors" && computerChoice === "Paper"){
+                        $("#win").html("User wins!");
+                }
+                if (userChoice === "Scissors" && computerChoice === "Rock"){
+                        $("#win").html("Computer wins!");
+                }
 
         });
         
