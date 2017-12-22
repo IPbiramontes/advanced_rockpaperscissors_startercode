@@ -30,8 +30,6 @@
 
 $( document ).ready(function() {
 
-        var winner = "";
-        
 
         
         $("#click").click(function() {
@@ -64,6 +62,7 @@ $( document ).ready(function() {
                 if (userChoice === "Scissors" && computerChoice === "Rock"){
                         $("#win").html("Computer wins!");
                 }
+                
 
         });
         
