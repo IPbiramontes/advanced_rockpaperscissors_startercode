@@ -29,45 +29,70 @@
 // DOCUMENT READY FUNCTION
 
 $( document ).ready(function() {
+    $("#click").click(function() {
+        var userChoice = $("input").val();
+        $("#insertchoice").html(userChoice);
+        var choices = ["Rock", "Paper", "Scissors"];
+        var randOm = Math.floor(Math.random()*3);
+        console.log(choices[randOm]);
+        var computerChoice = choices[randOm];
+        $("#insertchoice2").html(computerChoice);
 
-
-        
-        $("#click").click(function() {
-                var userChoice = $("input").val();
-                $("#insertchoice").html(userChoice);
-                var choices = ["Rock", "Paper", "Scissors"];
-                var randOm = Math.floor(Math.random()*3);
-                console.log(choices[randOm]);
-                var computerChoice = choices[randOm];
-                $("#insertchoice2").html(computerChoice);
-                
-                if (userChoice === computerChoice){
+        if (userChoice === "Paper"  ||userChoice === "Scissors"  ||userChoice === "Rock" || userChoice === "paper"  ||userChoice === "scissors"  ||userChoice === "rock")
+        {
+            if (userChoice === "Rock" && computerChoice === "Scissors"){
+                        $("#win").html("User wins!");
+            }
+            if (userChoice === "rock" && computerChoice === "Scissors"){
+                        $("#win").html("User wins!");
+            }
+            if (userChoice === "Paper" && computerChoice === "Rock" ){
+                        $("#win").html("User wins!");
+            }
+            if (userChoice === "paper" && computerChoice === "Rock" ){
+                        $("#win").html("User wins!");
+            }
+            if (userChoice === "Scissors" && computerChoice === "Paper"){
+                        $("#win").html("User wins!");
+            }
+            if (userChoice === "scissors" && computerChoice === "Paper"){
+                        $("#win").html("User wins!");
+            }
+            if (userChoice === "Rock" && computerChoice === "Paper"){
+                        $("#win").html("Computer wins!");
+            }
+            if (userChoice === "rock" && computerChoice === "Paper"){
+                        $("#win").html("Computer wins!");
+            }
+            if (userChoice === "Paper" && computerChoice === "Scissors"){
+                        $("#win").html("Computer wins!");
+            }
+            if (userChoice === "paper" && computerChoice === "Scissors"){
+                        $("#win").html("Computer wins!");
+            }
+            if (userChoice === "Scissors" && computerChoice === "Rock"){
+                        $("#win").html("Computer wins!");
+            }
+            if (userChoice === "scissors" && computerChoice === "Rock"){
+                        $("#win").html("Computer wins!");
+            }
+            if (userChoice === computerChoice){
+                        $("#win").html("Tie!");        
+            }
+            if (userChoice === "paper" && computerChoice === "Paper"){
                         $("#win").html("Tie!");
-                }
-                if (userChoice === "Paper" && computerChoice === "Rock"){
-                        $("#win").html("User wins!");
-                }
-                if (userChoice === "Paper" && computerChoice === "Scissors"){
-                        $("#win").html("Computer wins!");
-                }
-                if (userChoice === "Rock" && computerChoice === "Paper"){
-                        $("#win").html("Computer wins!");
-                }
-                if (userChoice === "Rock" && computerChoice === "Scissors"){
-                        $("#win").html("User wins!");
-                }
-                if (userChoice === "Scissors" && computerChoice === "Paper"){
-                        $("#win").html("User wins!");
-                }
-                if (userChoice === "Scissors" && computerChoice === "Rock"){
-                        $("#win").html("Computer wins!");
-                }
-                
-
-        });
+            }
+            if (userChoice === "scissors" && computerChoice === "Scissors"){
+                        $("#win").html("Tie!");
+            }
+            if (userChoice === "rock" && computerChoice === "Rock"){
+                        $("#win").html("Tie!");
+            }
+        }
+        else{
+            alert("Your only choices are Rock, Paper and Scissors. Try Again!");
+            $("#win").html("No winner :("); 
+        }       
         
-        
-        
-
-
-});
+    });  
+});  

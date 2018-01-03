@@ -15,7 +15,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <!--- Fontawesome CSS--->
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab" rel="stylesheet">
   </head>
 
   <body>
@@ -23,7 +23,7 @@
         <!-- TASK 1: In the div below. 
         1. In a header tag, add a title.  -->
         <div class="row"> 
-          <h1> Rock, Paper, Scissors! </h1>
+          <p id="rpsheader"> Rock, Paper, Scissors! </p>
           <!--2. In a paragraph tag, add instructions on how to play the game.-->
           <p> Choose Rock, Paper or Scissors and submit your choice below.</p>
           <!-- 3. Add a RPS image.-->
@@ -32,19 +32,19 @@
         <!-- 4. Add input box and button .-->
         <div class="row"> 
           <input>
-          <button id ="click">Shoot!</button>
+          <button id="click">Shoot!</button>
         </div> 
       </div>
         <!-- 5. Add divs to record User Choice and Computer Choice.-->
       <div class="container">
           <div class="row"> 
             <div class="col-sm-6" id="user">
-              <p> User's Choice </p>
-              <p id="insertchoice">     </p>
+              <p class="miniheaders"> User's Choice </p>
+              <p class="csschoices" id="insertchoice">     </p>
             </div>
             <div class="col-sm-6" id="cmp"> 
-              <p> Computer's Choice</p>
-              <p id="insertchoice2">     </p>
+              <p class="miniheaders"> Computer's Choice</p>
+              <p class="csschoices" id="insertchoice2">     </p>
             </div>
           </div>
       </div> 
@@ -52,8 +52,8 @@
         <div class="row">
           <!-- 6. Add a div to record the Winner.-->
           <div class="col-sm-12"> 
-            <p> The Winner </p>
-            <p id="win"> </p>
+            <p class="miniheaders"> The Winner </p>
+            <p class="csschoices" id="win"> </p>
           </div>
         </div>
       </div>

@@ -3,15 +3,33 @@ img{
 }
 
 button{
+    font-family: 'Josefin Slab', serif;
     border-radius:90px;
     background-color:black;
-    color:white;
-     font-weight: bold;
+    color: white;
+    font-weight: bold;
 }
-h1{
-    font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
-    color:yellow;
+#rpsheader{ 
+    width:100%;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Josefin Slab', serif;
+    border-radius:0px;
+    background-color:yellow;
+    color:black;
+    font-size: 50px;
   
+}
+p{
+    font-family: 'Josefin Slab', serif;
+    color:black;
+    font-size: 20px;
+    
+}
+.miniheaders{
+   text-decoration: underline; 
+    }
+.csschoices{
+    font-weight: bold;
 }
 #cmp{
     text-align:right;
